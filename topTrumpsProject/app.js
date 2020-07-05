@@ -86,14 +86,14 @@ playingCards = [dalmatian, pug, boxer, germanShepherd, bulldog, poodle, labrador
 
 // this shuffles the array/playing cards - goes through length of array and shuffles cards
 function shuffle(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      let j = Math.floor(Math.random() * (i + 1)); // random index from 0 to i
+    for (let i = array.length - 1; i > 0; i--) { // i is length of cards (minus 1 each time so when it gets to 0 the loop ends)
+      let j = Math.floor(Math.random() * (i + 1)); // j gets random number from length of playing cards (need to add 1 as i is 1 less)
   
-      [array[i], array[j]] = [array[j], array[i]];
+      [array[i], array[j]] = [array[j], array[i]];  // playing card in postion i is swapping with playing card in position j
     }
   }
 
-// executing the shuffle
+// executing the shuffle so cards are shuffled before splitting
 shuffle(playingCards); 
 
 // splitting the deck, first half to the player, second half to the computer
@@ -108,7 +108,7 @@ function limboCards() {
     limbo.push(player2.splice(0, 1));
     console.log(limbo.length);
 }
-
+// rules to the game to make game more user friendly
 console.log("Welcome to TOP TRUMPS!\n");
 console.log("The deck you will be playing is: Dogs\n");
 console.log("It is you vs the computer!\n");
@@ -132,7 +132,11 @@ console.log(player1[0]);
 
 // using prompt to have player 1 input their best card category
 const prompt = require('prompt-sync')();
-const value = prompt("Player 1 - Pick your best card category: ");
+let value = prompt("Player 1 - Pick your best card category: ");
+// if player enters a value that is not one of the categories we will ask them to pick again
+if (value != "userCuteness" || "userSize" || "userTemper" || "userSpeed" || "userRarity") {
+    value = prompt("Your choice was invalid, pick another category from your playing card: ");
+}
 
 // as per DRY, created a function which compares the value player 1 has input against the computer value
     function compareCards(userValue) {
