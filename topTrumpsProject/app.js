@@ -134,7 +134,7 @@ console.log(player1[0]);
 const prompt = require('prompt-sync')();
 let value = prompt("Player 1 - Pick your best card category: ");
 // if player enters a value that is not one of the categories we will ask them to pick again
-if (value != "userCuteness" || "userSize" || "userTemper" || "userSpeed" || "userRarity") {
+if (value != "userCuteness" && value != "userSize" && value != "userTemper" && value != "userSpeed" && value != "userRarity") {
     value = prompt("Your choice was invalid, pick another category from your playing card: ");
 }
 
