@@ -1,0 +1,41 @@
+.wrapper {
+    text-align: center;
+    background-image: linear-gradient(to right, red , yellow);
+    font-family: 'Roboto Mono', monospace;
+    padding: 20px 0
+}
+
+.playerOne {
+    font-family: 'Roboto Mono', monospace;
+    /*padding: 50px;*/
+}
+
+.btn{
+	border: none;
+	background-color: rgb(222,166,42);
+	border-radius: 5px;
+	font-size: 20px;
+}
+.container{
+	width: 400px;
+	height: 370px;
+	margin: 0px auto;
+	border: 2px solid white;
+	position: relative;
+}
+
+.roll{
+	position: absolute;
+	bottom: 10px;
+	/*width: 50px;*/
+	margin: 0 auto;
+	
+}
+#score{
+	margin: 10px 0px;
+	font-size: 20px;
+}
+.center{
+	display: flex;
+  justify-content: center;
+}
