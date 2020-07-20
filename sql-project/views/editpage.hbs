@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>Edit page</title>
+</head>
+<body class="editbody">  
+    <h1>Edit details page</h1>
+    <h2>Users from database:</h2>
+    <ul>
+        {{#each users}}
+            <li><b>ID:</b> {{this.id}} <b>Username:</b> {{this.user_name}}  <b>Email:</b> {{this.email}} </li>
+        {{/each}}
+    </ul>
+    <h2>What would you like to change?</h2>
+    <form action="">
+    <input class="edituserbtn" type="button" value="Edit Username" onclick="document.location='http://localhost:3006/edituser'">
+    <input class="editemailbtn" type="button" value="Edit Email" onclick="document.location='http://localhost:3006/editemail'">
+    <input class="editpasswordbtn" type="button" value="Edit Password" onclick="document.location='http://localhost:3006/editpassword'">
+    <input class="edithomebtn" type="button" value="Home Page" onclick="document.location='http://localhost:3006/'">
+</form>
+</body>
+</html>

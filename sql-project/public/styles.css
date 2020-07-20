@@ -1,0 +1,87 @@
+* {
+    font-family: "Courier New", Courier, monospace
+}
+
+.homebutton1,
+.homebutton2,
+.homebutton3,
+.registerbutton {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-family: "Courier New", Courier, monospace
+}
+
+.homebutton1 {
+    margin-left: 500px;
+}
+
+.homebutton1:hover,
+.homebutton2:hover,
+.registerbutton:hover,
+.homebutton3:hover {
+    background-color: RoyalBlue;
+}
+
+.homepageBody1 {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+}
+
+.homepageBody2,
+.homepageBody3,
+.editUserBody,
+.editemailBody,
+.editpasswordBody {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+}
+
+.editpasswordBody {
+    text-align: center;
+}
+
+.registerBody,
+.deleteBody {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+}
+
+.registerinput {
+    width: 100px;
+    height: 25px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.editbody {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+}
+
+.edithomebtn,
+.editemailbtn,
+.editpasswordbtn,
+.edituserbtn,
+.deletehomebtn {
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    font-family:  "Courier New", Courier, monospace;
+}
+
+.edithomebtn:hover,
+.editemailbtn:hover,
+.editpasswordbtn:hover,
+.edituserbtn:hover,
+.deletehomebtn:hover {
+    background-color: RoyalBlue;
+}

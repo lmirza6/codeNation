@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>Registration Page</title>
+</head>
+<body class="registerBody">
+    <h1>Register Here</h1>
+    <form action="/register" method="post" autocomplete="off">
+    <input type="text" name="user_name" placeholder="Username"/>
+    <input type="text" name="email" id="email" placeholder="Email" />
+    <input type="password" name="pass_word" id="pass_word" placeholder="Password"/>
+    <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm Password"/>
+    <button class="registerbutton" type="submit">Register User</button>
+    </form>
+    <h3>{{message}} </h3>
+ <form action="">
+    <input class="homebutton2" type="button" value="Home Page" onclick="document.location='http://localhost:3006'">
+</form>
+</body>
+</html>
+

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>Homepage</title>
+</head>
+<body> 
+    <h1 class="homepageBody1">Homepage</h1>
+    <h3 class="homepageBody2">Users from the database:</h1>
+    <ul class="homepageBody3">
+        {{#each users}}
+            <li><b>ID:</b> {{this.id}} <b>Username:</b> {{this.user_name}}<b> Email:</b> {{this.email}} </li>
+        {{/each}}
+    </ul>
+<form action="">
+    <input class="homebutton1" type="button" value="Edit Details" onclick="document.location='http://localhost:3006/edit'">
+    <input class="homebutton2" type="button" value="Delete" onclick="document.location='http://localhost:3006/delete'">
+    <input class="homebutton3" type="button" value="Register" onclick="document.location='http://localhost:3006/register'">
+</form>
+    
+</body>
+</html>

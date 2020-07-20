@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>Edit User</title>
+</head>
+<body class="editUserBody">  
+    <h1>Edit user page</h1>
+    <h2>Users from database:</h1>
+    <ul>
+        {{#each users}}
+            <li><b>ID:</b> {{this.id}} <b>Username:</b> {{this.user_name}}<b> Email:</b> {{this.email}}  </li>
+        {{/each}}
+    </ul>
+        <form action="/edituser" method="POST" autocomplete="off">
+        <input class="edituserinput" type="text" name="id" placeholder="Id"/>
+        <input class="edituserinput" type="text" name="user_name" placeholder="Username"/>
+        <button class="edituserBtn" type="submit">Edit User</button>
+    </form>
+<h1>{{message}}</h1>
+ <form action="">
+    <input class="homebutton2" type="button" value="Edit Page" onclick="document.location='http://localhost:3006/edit'">
+    <input class="homebutton2" type="button" value="Home Page" onclick="document.location='http://localhost:3006'">
+</form>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css"/>
+    <title>Delete page</title>
+</head>
+<body class="deleteBody">  
+    <h1>Delete User</h1>
+    <h2>Users from the database:</h1>
+    <ul>
+        {{#each users}}
+            <li><b>ID:</b> {{this.id}} <b>Username:</b> {{this.user_name}}<b> Email:</b> {{this.email}}  </li>
+        {{/each}}
+    </ul>
+        <form action="/delete" method="POST" autocomplete="off">
+        <input class="deleteinput" type="text" name="id" placeholder="Id"/>
+        <button class="deleteBtn" type="submit">Delete User</button>
+    </form>
+<h1>{{message}}</h1>
+    <input class="homebutton2" type="button" value="Edit Page" onclick="document.location='http://localhost:3006/edit'">        
+    <input class="deletehomebtn" type="button" value="Home Page" onclick="document.location='http://localhost:3006/'">
+</form>
+</body>
+</html>
+
+  
